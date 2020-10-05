@@ -41,7 +41,7 @@ a {
   color: #90F0CF;
   text-decoration: none;
 }
-a: visited { color: #90F0CF;}
+a: visited { color: #9556A3;}
 a:hover,
 a:focus {
   color: #9556A3;
@@ -76,4 +76,11 @@ a: active { color: #6AA390}
 }
 .image {
   width:25px;
+}
+
+header {
+background-color: #F0E2C0;
+padding: 10px;
+margin: 10px;
+border-bottom: 3px solid #9556A3;
 }
