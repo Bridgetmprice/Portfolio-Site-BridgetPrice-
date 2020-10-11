@@ -10,7 +10,7 @@ Button 2 color (green) : #90F0CF
   box-sizing: border-box;
 }
 body {
-background-color: #f0e2c0
+  background-color: #f0e2c0
   font-family: 'Slabo 13px', serif;
   font-size: 16px;
   font-weight: 300;
@@ -60,8 +60,11 @@ a: active { color: #6AA390}
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid #9556A3;
-  transition: 0.2s opacity;
+  text-align: center;
+  transition-duration: 5.2s;
+  transition-property: opacity;
 }
+
 .button:hover {
   opacity: 0.8;
   text-decoration: none;
@@ -71,6 +74,7 @@ a: active { color: #6AA390}
   color: #E3A8F0;
   text-transform: uppercase;
   border: 2px solid #9556A3;
+  text-align: center;
 }
 
 .button.contact:hover {
@@ -93,6 +97,12 @@ a: active { color: #6AA390}
 #hero h1 {
   text-align: center; /* centers text */
 }
+#content h2 {
+  text-align: center; /* centers text */
+}
+#contact {
+  text-align: center; /* centers text */
+}
 .logo {
   max-width: 250px;
 }
@@ -103,6 +113,9 @@ header {
   box-shadow: 10px 10px 15px 0px rgba(92,92,92,1);
   position:relative
 }
+.logo {padding: 0 15px;
+text-transform: uppercase;
+font-weight: 700;}
 
 nav > ul{
   list-style-type: none;
@@ -136,6 +149,14 @@ nav > ul> li > a:focus {
 display: inline-block;
 width: 100%}
 
+#content .button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+
 .icons {
   margin: 25px 0; /* 25px top and bottom , 0 left and right */
 }
@@ -144,4 +165,63 @@ footer {
   background-color: #F0E2C0;
   padding: 10px 0;
   padding-top: 25px; border-top: 1px solid #000000;
+}
+
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding:20px 0 99px;
+  }
+  nav { width: auto;
+    float: right;
+    margin-top: 4px;
+  }}
+
+  body {font-size: 18px;
+}
+{#about-page h3 { margin-top: 0;}}
+
+
+
+#hero span{
+  display: block;
+}
+.col-md-6 {
+  width: 50%;
+}
+[class*="col-"] {
+  float: left;
+  padding: 10px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+@media only screen and (min-width: 1024px) {
+  .col-md-6 {
+    width: 100%}
+  .col-lg-7 {width:58.33%}
+  .col-lg-5 {width:41.66%}
+  .container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+}
+
+#Capa_1 {width: 100%; max-width: 100%; height: auto;}
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+.cloud {
+  animation: 15s cloud-move infinite alternate linear;
+}
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
 }
