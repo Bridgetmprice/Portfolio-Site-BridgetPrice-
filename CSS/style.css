@@ -40,6 +40,7 @@ font-weight: 400;
 }
 img {width: 100%;
 }
+@media (max-width: 480px) { .logo{ display: block; width: 120px; margin-right: auto; } } .header { background-color: #f1f1f1; padding: 10px; text-align: center; } .logo{ display: block; margin-right: auto; max-width: 100%; height: auto; }
 a {
   color: #6AA390;
   text-decoration: none;
@@ -154,6 +155,19 @@ width: 100%}
   margin-left: auto;
   margin-right: auto;
   width: 40%;
+}
+
+.graphics {  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+.graphics2 {  float: left;
+  width: 25%;
+  padding: 5px;
+}
+.graphics3 {  float: left;
+  width: 50%;
+  padding: 5px;
 }
 
 
