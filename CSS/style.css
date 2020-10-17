@@ -109,25 +109,20 @@ a: active { color: #6AA390}
 }
 header {
   background-color: #F0E2C0;
-  text-align: center;
-  padding: 10px 0;
+  padding: 10px 0 1px;
   box-shadow: 10px 10px 15px 0px rgba(92,92,92,1);
   position:relative
 }
-.logo {padding: 0 15px;
+.logo {padding: 0 20px;
 text-transform: uppercase;
 font-weight: 700;}
 
 nav > ul{
   list-style-type: none;
   padding: 0;
-  display: inline-block;
-  width: 100%;
+  margin: 0;
 }
-nav > ul > li {
-  display: inline-block;
 
-}
 
 nav > ul> li > a {
   padding: 0 15px;
@@ -144,6 +139,31 @@ nav > ul> li > a:focus {
   text-decoration: underline;}
 
  nav > ul> li > a:active { color: #6AA390}
+ .navtoggle li:not(:last-child) {
+   display: none;
+ }
+ .navtoggle, .navtoggle.responsive {
+   position: relative;
+ }
+ .navtoggle li .icon {
+   position: absolute;
+   right: 0;
+   top: 2px;
+   font-size: 20px;
+   padding-right: 0;
+ }
+ .navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
 
  #hero {background-color: #F0E2C0;
  padding: 20px 0;
@@ -188,8 +208,19 @@ footer {
   }
   nav { width: auto;
     float: right;
-    margin-top: 4px;
-  }}
+    margin-top: 4px;}
+    nav > ul > li {
+      display: inline-block;}
+      .navtoggle li:not(:last-child) {
+        display: inline-block;
+      }
+      .navtoggle li:last-child {
+  display: none;
+}
+nav > ul {
+  margin: 1em 0;
+}
+  }
 
   body {font-size: 18px;
 }
