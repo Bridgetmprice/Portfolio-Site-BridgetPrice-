@@ -40,6 +40,8 @@ font-weight: 400;
   color: #6AA390
 }
 
+p {text-align: left;}
+
 
 img {width: 100%;
 }
@@ -199,9 +201,11 @@ width: 100%}
 }
 
 footer {
-  background-color: #F0E2C0;
-  padding: 10px 0;
-  padding-top: 25px; border-top: 1px solid #000000;
+    background-color: #F0E2C0;
+    clear:both;
+    padding: 10px 0;
+    padding-top: 25px;
+    border-top: 1px solid #000000;
 }
 
 @media only screen and (min-width: 640px) {
@@ -236,11 +240,14 @@ nav > ul {
 }
 .col-md-6 {
   width: 50%;
+  text-align: left;
 }
 [class*="col-"] {
   float: left;
   padding: 10px;
 }
+
+.col-md-6 h3 {text-align: center;}
 .row::after {
   content: "";
   clear: both;
